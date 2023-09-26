@@ -7,7 +7,8 @@ const userController = require('../controllers/userController')
 
 // User routes
 
-router.get('/api', userController.home)
+router.get('/usernexa', userController.home)
 router.get('/add', userController.addUser)
+router.post('/add', userController.postUser)
 
 module.exports = router;
